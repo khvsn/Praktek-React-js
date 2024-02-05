@@ -12,11 +12,11 @@ const Header = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-7xl">
+    <div className="bgHome w-full max-w-7xl bg-[#7D7C7C]">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
-          <span className="text-primary hover:text-white">Kairulll_</span>
+          <span className="text-white">Kairulll_</span>
         </div>
         {/* Menu icon */}
         <div onClick={() => setOpen(!open)} className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7 text-white">
@@ -30,7 +30,7 @@ const Header = () => {
         >
           {Links.map((link) => (
             <li className="md:ml-8 md:my-0 my-7 font-semibold" key={link.name}>
-              <Link to={link.link} activeClass="active" smooth={true} spy={true} className="text-white hover:text-primary duration-500">
+              <Link to={link.link} activeClass="active" smooth={true} spy={true} className="text-white hover:text-dark duration-500">
                 {link.name}
               </Link>
             </li>

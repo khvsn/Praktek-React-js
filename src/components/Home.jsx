@@ -1,7 +1,6 @@
 import React from "react";
 import irul from "../assets/irul.jpg";
 
-
 const Home = () => {
   return (
     <div className="md:px-10 px-7 my-14 md:h-screen bg-[#1a1a29]" id="home">
@@ -15,12 +14,12 @@ const Home = () => {
             <p className="md:w-96">FrontEnd Develoment</p>
             <div className="mt-5">
               <button className="btn transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary">About me</button>
-              <button className="btn outline py-1.5 px-6 rounded border-none ml-5 text-white ">Projects</button>
+              <button className="btn outline py-1.5 px-6 rounded border-none ml-5 text-white   ">Projects</button>
             </div>
           </div>
           {/* img */}
           <div className="order-first md:order-last relative">
-            <img className= 'irulll'src={irul} alt="irul" />
+            <img className="irulll" src={irul} alt="irul" />
           </div>
         </div>
       </div>
